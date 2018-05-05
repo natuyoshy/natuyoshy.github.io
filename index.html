@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>はろー、わい</title>
+    <title>はろー、こんにちは</title>
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -12,7 +12,7 @@
 <body>
 <div class="ui container">
     <div class="header">
-        <h1>はろー、わい</h1>
+        <h1>はろー、こんにちは</h1>
     </div>
     <div class="top">
         about site
@@ -33,17 +33,6 @@
     </div>
 </div>
 </body>
-<script>
-    // ページ内リンク
-    $(function(){
-        $('a[href^="#"]').click(function() {
-            var speed = 500; // ミリ秒
-            var href= $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            var position = target.offset().top;
-            $('body,html').animate({scrollTop:position}, speed, 'swing');
-            return false;
-        });
-    });
-</script>
+
+
 </html>
